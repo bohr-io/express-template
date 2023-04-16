@@ -1,8 +1,8 @@
-import express, { Response } from "express";
+import express, { Response, Request } from "express";
 
 var app = express();
 
-app.get("/", function (res: Response) {
+app.get("/", function (req: Request, res: Response) {
   res.send("Bohr Express template");
 });
 
